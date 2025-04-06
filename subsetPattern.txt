@@ -1,0 +1,3 @@
+subset pattern
+    find all possible combinations of elements from a given set 
+    explore all possible arrangements of elements from from the given set 

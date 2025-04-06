@@ -1,0 +1,14 @@
+sliding window
+    when you need to process a series of data elements like a list or string.
+    you look for specific things in the list by looking at a smaller part of the list at a time. 
+
+s = ["a","b","c","d","e","f"]
+window = ["b", "c"]
+
+window defintion: 
+    the small part is called window. The window slides one step until the entire list is scanned. 
+
+When to use sliding window method? 
+    When problem is asking you to find a subset of elements that satisfies a given condition. 
+    Inputs are mostlikely a linear data structure, arrays, linked list, or strings. 
+    You have to find shortest or longest substring or subarray that satisfies particular condition. 
