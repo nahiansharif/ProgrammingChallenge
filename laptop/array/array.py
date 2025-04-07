@@ -39,12 +39,11 @@ print(f"\n # 1 original: {originalList} append(): {my_list}")
 originalList = my_list.copy()
 
  
-# extend(iterable): Add all elements of an iterable (e.g., another list) to the end of the list
-my_list = [1, 2, 3, 2, 4, 5]  # Initialize my_list before extend
-originalList = my_list.copy()
+# extend(list): Add all elements of an iterable (e.g., another list) to the end of the list
+
 my_list.extend([6, 12, 15]) 
 print(f"\n # 2 original: {originalList} extend(): {my_list}")
-originalList = my_list.copy()
+
 
  
 # insert(index, val): Insert an item at the defined index
@@ -216,6 +215,10 @@ print(f"\n # 28 compare: {a == b}")
 # arr[:-n] means you get every element except the last n elements.
 # arr[n:] means you get every element except the first n elements.
 # arr[:n] means you get the first n elements from the list, starting from the beginning
+# [-2:] neg + left = get last 2 index
+# [:-2] neg + right = get everything except last 2
+# [2:] pos + left = get everything except first 2 
+# [:2] pos + right - get first 2 
 
 print(f"\n # 29 original: {my_list}")
 print(my_list[-2:])

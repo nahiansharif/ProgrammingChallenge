@@ -1,0 +1,41 @@
+Create Empty List
+Create a list with some default value
+Create list with 6 items and default value is kobalis
+Check if this element exist in the list
+Append 20 random values in a list
+Add [9, 98, 987] to the list by the end. 
+In the list with 10 items, add 3 values at index 2, 5, 8. 
+In the list of 15 elements, remove the odd number indexes.
+Clear a list.
+Find the index of the value 6 in the list.
+In the list, count the number of times value 6 appeared in the list. 
+Sort a list
+Sort a list without affecting the list. 
+Reverse a list in 2 ways
+copy a list in 2 ways
+in a list of 20 items, iterate the list and skip 3, 6, 9 elements
+in a list of 15 items, display the FIRST half of the list
+in a list of 15 items, display the LAST half of the list
+Get the last item in the list
+Use list comprehension to find EVEN numbers
+Use list comprehension to find ODD numbers
+Combine nested list into normal list
+Shuffle a list
+Pick 5 random items from the list of 13 elements
+Use filter to find all the numbers divisible by 7 in a list of 50 items.
+Use map to change positive num into negative or negative num into positive 
+square all the numbers in the list and add them all. reduce the list into integer with result
+in the list of 30 items, swap the even numbers from the first half with the odd numbers in the last half. 
+Sort the array by absolute value
+Create a dictionary with the value of the list
+in the list of 17 items, get last 6 items
+in the list of 17 items, get first 8 items
+in the list of 17 items, get all elements except first 11 items
+in the list of 17 items, get all elements except last 4 items
+generate all prime numbers that exists in the range of 0 and 10000
+is 47 a prime number? 
+is 1056 a prime number
+
+
+
+

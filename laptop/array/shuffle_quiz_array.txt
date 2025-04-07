@@ -1,0 +1,82 @@
+q1: in the list of 30 items, swap the even numbers from the first half with the odd numbers in the last half. 
+
+q2: is 1056 a prime number
+
+q3: 
+
+q4: Add [9, 98, 987] to the list by the end. 
+
+q5: Create a dictionary with the value of the list
+
+q6: Create a list with some default value
+
+q7: In the list, count the number of times value 6 appeared in the list. 
+
+q8: Shuffle a list
+
+q9: in the list of 17 items, get all elements except first 11 items
+
+q10: Sort a list
+
+q11: Use list comprehension to find ODD numbers
+
+q12: In the list with 10 items, add 3 values at index 2, 5, 8. 
+
+q13: Use map to change positive num into negative or negative num into positive 
+
+q14: Combine nested list into normal list
+
+q15: Use list comprehension to find EVEN numbers
+
+q16: in the list of 17 items, get last 6 items
+
+q17: in the list of 17 items, get first 8 items
+
+q18: Get the last item in the list
+
+q19: Clear a list.
+
+q20: Sort a list without affecting the list. 
+
+q21: Sort the array by absolute value
+
+q22: 
+
+q23: Use filter to find all the numbers divisible by 7 in a list of 50 items.
+
+q24: 
+
+q25: 
+
+q26: copy a list in 2 ways
+
+q27: generate all prime numbers that exists in the range of 0 and 10000
+
+q28: is 47 a prime number? 
+
+q29: Reverse a list in 2 ways
+
+q30: square all the numbers in the list and add them all. reduce the list into integer with result
+
+q31: Create Empty List
+
+q32: Check if this element exist in the list
+
+q33: in a list of 15 items, display the LAST half of the list
+
+q34: In the list of 15 elements, remove the odd number indexes.
+
+q35: in a list of 20 items, iterate the list and skip 3, 6, 9 elements
+
+q36: in a list of 15 items, display the FIRST half of the list
+
+q37: Pick 5 random items from the list of 13 elements
+
+q38: Find the index of the value 6 in the list.
+
+q39: Create list with 6 items and default value is kobalis
+
+q40: Append 20 random values in a list
+
+q41: in the list of 17 items, get all elements except last 4 items
+
