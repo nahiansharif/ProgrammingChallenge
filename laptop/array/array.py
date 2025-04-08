@@ -1,6 +1,8 @@
 # prepare for the interview question
 # remember, you failed miserably in paycom interview, but you have 6 months until july to make a great comback. 
 
+
+# append extend insert pop remove clear copy index count sort sorted reverse set jump half flat shuffle filter map reduce swap absolute hashmap rotation prime ::-1  :: 
 lst = []
 
 lst2 = [2, 2, 2, 2, 2, 2]
@@ -17,7 +19,7 @@ if 7 in list9:
     index = list9.index(7)
 # if val 7 exists, index function will find the location. 
 
-list9.insert(4, 100) #insert at item 4 with value 100
+list9.insert(4, 100) #insert at index 4 with value 100
 
 for i in range(2, 5):
     list9.append(i) #add item at the end of the list
@@ -39,7 +41,7 @@ print(f"\n # 1 original: {originalList} append(): {my_list}")
 originalList = my_list.copy()
 
  
-# extend(list): Add all elements of an iterable (e.g., another list) to the end of the list
+# extend(list): Add a list at the end of the main list 
 
 my_list.extend([6, 12, 15]) 
 print(f"\n # 2 original: {originalList} extend(): {my_list}")
@@ -57,6 +59,11 @@ originalList = my_list.copy()
 # You can also store the removed item's value, but it won't be in the array 
 popped_element = my_list.pop(2)
 print(f"\n # 4 original: {originalList} popped_element: {popped_element} List: {my_list}")
+originalList = my_list.copy()
+
+# remove last index from the list
+my_list.pop()
+print(f"\n # 4.5 original: {originalList} pop(): {my_list}")
 originalList = my_list.copy()
 
  
@@ -121,7 +128,7 @@ print(f"\n # 13 original: {originalList} list[::]: {shallow_copy}")
 
 
  
-#another way to copy list 
+# duplicated removed
 print(f"\n # 14 original: {my_list} duplicated removed: {set(my_list)}")
 
 
@@ -180,14 +187,17 @@ evens = list(filter(lambda x: x % 2 == 0, my_list))
 print(f"\n # 22 original: {my_list} filtered Evens: {evens}")
 
 # use map to perform tasks with all elements
-squared = list(map(lambda x: x**2, my_list))
+squared = list(map(lambda x: x % 3, my_list))
 print(f"\n # 23 original: {my_list} map sqaured: {squared}")
 
 # perform tasks with all the elements and reduce them into 1 item 
+# have default value in the last argument to avoid errors that occur in empty lists. 
 import functools
-import operator
-product = functools.reduce(operator.mul, my_list, 1)
-print(f"\n # 24 original: {my_list} product: {product}")
+add= functools.reduce(lambda x, y: x + y, my_list, 0)
+subtract= functools.reduce(lambda x, y: x - y, my_list, 0) 
+mul= functools.reduce(lambda x, y: x * y, my_list, 1) 
+divide= functools.reduce(lambda x, y: x / y, my_list, 1) 
+print(f"\n # 24 original: {my_list} add: {add}  subtract: {subtract} mul: {mul} divide: {divide}")
 
 # swap elements
 originalList = my_list.copy()
@@ -221,10 +231,10 @@ print(f"\n # 28 compare: {a == b}")
 # [:2] pos + right - get first 2 
 
 print(f"\n # 29 original: {my_list}")
-print(my_list[-2:])
-print(my_list[:-2])
-print(my_list[5:])
-print(my_list[:5])
+print(my_list[-2:]) #nl = last
+print(my_list[:-2]) #nr = eel
+print(my_list[5:]) #pl = eef
+print(my_list[:5]) #pr = first
 
 
 rotated = my_list[-2:] + my_list[:-2]
@@ -243,6 +253,15 @@ def is_prime(n):
     if n == 2:
         return True
     return not any(n%i == 0 for i in it.islice(it.count(2), ma.floor(ma.sqrt(n)-1)))
+# ANY means if any of the condition is true, it will be accepted. but NOT makes it the opposite. So if any of the condition is true, it will be false. 
+# n%i == 0 checks if n is divisible by I 
+# for i in.... this is part of the number generator that produces the sequence of divisors to test against n
+# it.count(2) means the starting point in this generator is 2 to infinite 
+# itertools.islice cuts the sequence from infinite to ma.floor(ma.sqrt(n) - 1) 
+# ma.sqrt(n) square root of n 
+# - 1 ensures you only check up to the largest integer less than the square root of n.
+# ma.floor() rounds down to the nearest integer.
+
 
 def the_primes(n):
     return list(filter(lambda x: is_prime(x), it.takewhile(lambda x: x < n, it.count(2))))
@@ -253,7 +272,9 @@ print(f"\n # 31 prime numbers {primeNums}")
 print(f"\n # 32 is 10 prime numbers? {is_prime(10)}")
 print(f"\n # 33 is 31 prime numbers? {is_prime(31)}")
 
-
+import math
+gcd_result = functools.reduce(math.gcd, my_list)
+print(f"\n # 34 original: {my_list} GCD: {gcd_result}")
 
 
 
