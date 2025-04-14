@@ -1,7 +1,6 @@
 # prepare for the interview question
 # remember, you failed miserably in paycom interview, but you have 6 months until july to make a great comback. 
 
-
 # append extend insert pop remove clear copy index count sort sorted reverse set jump half flat shuffle filter map reduce swap absolute hashmap rotation prime ::-1  :: 
 lst = []
 
@@ -228,7 +227,7 @@ print(f"\n # 28 compare: {a == b}")
 # [-2:] neg + left = get last 2 index
 # [:-2] neg + right = get everything except last 2
 # [2:] pos + left = get everything except first 2 
-# [:2] pos + right - get first 2 
+# [:2] pos + right = get first 2 
 
 print(f"\n # 29 original: {my_list}")
 print(my_list[-2:]) #nl = last
@@ -276,20 +275,6 @@ import math
 gcd_result = functools.reduce(math.gcd, my_list)
 print(f"\n # 34 original: {my_list} GCD: {gcd_result}")
 
-# unpacking
-a, b, c = [2, 3, 8]
-print(f"\n # 35 original: {a, b, c} ")
 
-# get value and index from array 
 
-print(f"\n # 36 original: {my_list}")
-for i, n in enumerate(my_list):
-    print(i, n)
 print("\n")
-
-
-nums1 = [2, 4, 6]
-nums2 = [24, 46, 68]
-print(f"\n # 37 original: {nums1, nums2}")
-for n1, n2 in zip(nums1, nums2):
-    print(n1, n2)

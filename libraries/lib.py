@@ -69,7 +69,3 @@ string.digits             # '0123456789'
 # ✅ heapq
 
 # ✅ itertools
-
-# ✅ bisect
-
-# ✅ functools.lru_cache
