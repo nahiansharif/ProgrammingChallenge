@@ -276,6 +276,20 @@ import math
 gcd_result = functools.reduce(math.gcd, my_list)
 print(f"\n # 34 original: {my_list} GCD: {gcd_result}")
 
+# unpacking
+a, b, c = [2, 3, 8]
+print(f"\n # 35 original: {a, b, c} ")
 
+# get value and index from array 
 
+print(f"\n # 36 original: {my_list}")
+for i, n in enumerate(my_list):
+    print(i, n)
 print("\n")
+
+
+nums1 = [2, 4, 6]
+nums2 = [24, 46, 68]
+print(f"\n # 37 original: {nums1, nums2}")
+for n1, n2 in zip(nums1, nums2):
+    print(n1, n2)
