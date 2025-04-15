@@ -106,6 +106,14 @@ else:
 s = txt.find("l")
 print(f"# 20: finding l : {txt, s}")
 
+
+#converting 
+num = 42
+str_num = str(num)
+
+str_num = "42"
+num = int(str_num)
+
 #frequency counter: see how many times each letter appeared in a string
 # it's sorted from big value to small value 
 

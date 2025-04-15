@@ -66,7 +66,7 @@ from collections import defaultdict
 freq = defaultdict(int)
 freq["apple"] += 1
 
-# Counts items in a list or string.
+# Counts items in a list or string as dictionary.
 from collections import Counter
 
 words = ["a", "b", "a", "c"]
@@ -85,25 +85,9 @@ users = {
 print(f"# 13: print nested hashmap: {users["alice"]["city"]}" )
 
 # Use setdefault() to initialize values if not present:
-my_map.setdefault("apple", 0)
+my_map.setdefault("apple", 0) 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+######################################################################################################################################
 
 # Find the max number of times an item appeared in the list. 
 
