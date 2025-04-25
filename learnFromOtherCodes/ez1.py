@@ -2,14 +2,20 @@
 
 
 class Solution:
-    def titleToNumber(self, columnTitle: str) -> int:
+    def titleToNumber(self, columnTitle):
 
         ans=0
         pointer=len(columnTitle)-1
 
         for i in range(len(columnTitle)):
-            pos = ord(columnTitle[i])-ord('A')+1
-            ans += int(pos*(26**pointer))
+            pos = ord(columnTitle[i]) - ord('A')+1  # int value of columnTitle[i] (between 65 and 90 ) - int value of first character  + 1 
+            
+            # 26 is the base | because there are 26 characters in english
+            # we have to square the base by the number of characters in the string
+            # each character in the string contributes to the final column number using base 26 multiplication.
+            
+            ans += int(pos*(26**pointer)) 
+            
             pointer -= 1
 
         return ans    
@@ -18,12 +24,13 @@ class Solution:
 class Solution:
     def titleToNumber(self, columnTitle: str) -> int:
         ans = 0
+        # ord(char) - ord('A') + 1 is basically excluding the integers that comes before A
 
         for char in columnTitle:
-            ans = ans * 26 + (ord(char) - ord('A') + 1)
+            ans = (ans * 26) + (ord(char) - ord('A') + 1) 
 
         return ans
-
+ 
 
 def str2num_recursively(s):
     def _helper(s, res):

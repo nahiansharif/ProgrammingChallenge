@@ -119,3 +119,33 @@ def group_anagrams(words):
         key = ''.join(sorted(word))
         groups[key].append(word)
     return list(groups.values())
+
+
+
+# improve time complexity from o(n)^2 to o(n) 
+def has_pair_with_sum(arr, target):
+    for i in range(len(arr)):
+        for j in range(len(arr)):
+            if i != j and arr[i] + arr[j] == target:
+                return True
+    return False
+
+def has_pair_with_sum2(arr, target):
+
+    x = {}
+    for i in range(len(arr)):
+        # in Algebra, arr[i] and target is given, we have to find arr[j]. so target - arr[i] = arr[j] 
+        # we replace arr[j] with dictionary x. 
+        # looking for keys in dictionary gives is the time complexity of O(1)
+        # the total time complexity would be O(n) * O(1) = O(n) 
+        if target - arr[i] in x:
+            return True
+        # we are just inserting the keys, value is not signficant 
+        x[arr[i]] = i 
+    return False
+        
+print(has_pair_with_sum([2, 4, 6, 8, 9, 3], 13))
+print(has_pair_with_sum2([2, 4, 6, 8, 9, 3], 13))
+
+print(has_pair_with_sum([2, 4, 6, 8, 9], 35))
+print(has_pair_with_sum2([2, 4, 6, 8, 9], 35))

@@ -137,6 +137,9 @@ for ch in txt:
 
 print(f"# 22: frequency ccounter of str using default dict: {txt, count}")
 
+# convert character into ASCII values and the opposite
+print(f"# 23: Get ASCII value : {ord('A'), chr(66)}")
+
 # find first unique character: 
 
 def findUnique(txt):
