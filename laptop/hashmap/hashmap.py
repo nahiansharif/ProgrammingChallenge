@@ -10,22 +10,23 @@ myVar = {}
 my_map = {"alice": 88, "bob": 77, "popi": 82}
 
 # get value of a specific key
-print(f"# 1: default value: {my_map["alice"]}")  # Output: 88
+x = my_map["alice"]
+print(f"# 1: get value based on key: {x}")  # Output: 88
 
 # add and update new entries:
 my_map["charlie"] = 99  # Add new entry
 my_map["alice"] = 90    # Update existing entry
 
-print(f"# 2: value: {my_map}")  
+print(f"# 2: show whole hashmap after basic insertion: {my_map}")  
 
 # Check if key exists 
 if "bob" in my_map:
-    print("# 3: Bob is in the map!")  # Output: Bob is in the map!
+    print("# 3: Check if Bob is in the hashmap")  # Output: Bob is in the map!
 
 # remove a key and its value:
 my_map.pop("alice")  # Removes 'alice' from map
 del my_map["popi"] # this is another way
-print(f"# 4: after removing value: {my_map}")         # {'bob': 77, 'charlie': 99}
+print(f"# 4: after removing keys: {my_map}")         # {'bob': 77, 'charlie': 99}
 
 # length of hashmap:
 
@@ -71,7 +72,8 @@ from collections import Counter
 
 words = ["a", "b", "a", "c"]
 count = Counter(words)
-print(f"# 12: print amount of times 'a' appeared in hashmap: {count["a"]}" )  # 2
+x = count["a"]
+print(f"# 12: print amount of times 'a' appeared in hashmap: {x}" )  # 2
 
 # dictionary comprehension: 
 squares = {x: x * x for x in range(5)}
@@ -82,7 +84,8 @@ users = {
     "alice": {"age": 25, "city": "NY"},
     "bob": {"age": 30, "city": "LA"}
 }
-print(f"# 13: print nested hashmap: {users["alice"]["city"]}" )
+x = users["alice"]["city"]
+print(f"# 13: print nested hashmap: {x}" )
 
 # Use setdefault() to initialize values if not present:
 my_map.setdefault("apple", 0) 
