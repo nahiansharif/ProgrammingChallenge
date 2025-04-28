@@ -9,6 +9,8 @@ def containsNearbyDuplicate(nums, k):
                     if abs(i - j) <= k:
                         return True
         return False
+    
+  
 
 def containsNearbyDuplicate(nums, k):
         x = {}

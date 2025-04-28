@@ -1,4 +1,5 @@
 # Given a string columnTitle that represents the column title as appears in an Excel sheet, return its corresponding column number.
+# https://leetcode.com/problems/excel-sheet-column-number/description/
 
 
 class Solution:
@@ -11,10 +12,12 @@ class Solution:
             pos = ord(columnTitle[i]) - ord('A')+1  # int value of columnTitle[i] (between 65 and 90 ) - int value of first character  + 1 
             
             # 26 is the base | because there are 26 characters in english
-            # we have to square the base by the number of characters in the string
-            # each character in the string contributes to the final column number using base 26 multiplication.
+            # we have to square the base by the number of characters in the string - 1
+            # multiply this by the current value of the letter. 
+            # add this to the total number 
             
             ans += int(pos*(26**pointer)) 
+            
             
             pointer -= 1
 

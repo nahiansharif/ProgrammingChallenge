@@ -102,6 +102,15 @@ def item_appeared_counter(arr):
     maxNumKey = max(count, key=count.get)
     return maxNumKey
 
+from collections import defaultdict
+def item_appeared_counter(arr):
+    count = defaultdict(int)
+    for x in arr:
+        count[x] += 1
+    
+    maxNumKey = max(count, key=count.get)
+    return maxNumKey
+
 # Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 def two_sum(nums, target):
