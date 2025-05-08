@@ -128,9 +128,9 @@ from collections import defaultdict
 def group_anagrams(words):
     groups = defaultdict(list)
     for word in words:
-        key = ''.join(sorted(word))
+        key = ''.join(sorted(word)) # this create a list of sorted strings that is being joined to become only string
         groups[key].append(word)
-    return list(groups.values())
+    return list(groups.values()) 
 
 
 
@@ -161,3 +161,36 @@ print(has_pair_with_sum2([2, 4, 6, 8, 9, 3], 13))
 
 print(has_pair_with_sum([2, 4, 6, 8, 9], 35))
 print(has_pair_with_sum2([2, 4, 6, 8, 9], 35))
+
+
+def isomorphic(s, t):
+    x = {}
+
+    for i in range(len(s)):
+        # search if certain key already exists in the hashmap
+        # if not, create one
+        if s[i] not in x:
+            x[s[i]] = t[i]
+
+    print("_____________") 
+    print(x)
+
+    for i in range(len(t)):
+        # search if certain value already exists in the hashmap's all values
+        if t[i] not in x.values():
+            return False
+
+    return True
+
+
+s = "egg"
+t = "add"
+print(s, t, isomorphic(s, t))
+
+s = "foo"
+t = "bar"
+print(s, t, isomorphic(s, t))
+
+s = "paper"
+t = "title"
+print(s, t, isomorphic(s, t))
